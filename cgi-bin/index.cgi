@@ -13,8 +13,8 @@ print "<title>CGI Test Page</title>";
 print "</head>";
 print "<h1>This is a shit h1 tag title</h1>";
 
-for(my $i=0; $i<20; $i++){
-	say "$i</br>";
+for (my $i = 0; $i < 20; $i++) {
+    say "$i</br>";
 }
 
 # This will allow me to print all the events happening in the pc.
