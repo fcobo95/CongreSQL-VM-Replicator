@@ -11,7 +11,7 @@ chomp $user_vm_count;
 system "VBoxManage clonevm 'Ubuntu Template' --name 'Ubuntu Server Main Node' --register";
 system "VBoxManage startvm 'Ubuntu Server Main Node'";
 
-exit 0 if ($user_vm_count eq "");
+exit 0 if ($user_vm_count eq "") || say "Successfully got you input! Amount = $user_vm_count";
 
 for (my $vm_number = 1; $vm_number <= $user_vm_count; $vm_number++) {
     system "VBoxManage clonevm 'Ubuntu Template' --name 'Ubuntu Server Node $vm_number' --register";
