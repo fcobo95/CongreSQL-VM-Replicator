@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
 use feature qw/say/;
 
 print "Content-type: text/html\n\n";
@@ -11,7 +13,7 @@ print "<title>CGI Test Page</title>";
 print "</head>";
 print "<h1>This is a shit h1 tag title</h1>";
 
-for($i=0; $i<20; $i++){
+for(my $i=0; $i<20; $i++){
 	say "$i</br>";
 }
 
