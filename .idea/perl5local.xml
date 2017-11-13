@@ -6,7 +6,7 @@
         <option value="/usr/lib/perl5" />
       </list>
     </option>
-    <option name="perlInterpreter" value="Perl v5.22.1 (1)" />
+    <option name="perlInterpreter" value="Perl v5.26.1" />
   </component>
   <component name="Perl5XSubsState">
     <option name="isActual" value="false" />
