@@ -4,6 +4,7 @@ use strict;
 use warnings;
 use feature qw/say/;
 use DBI;
+use Parse::Syslog;
 # Importing the Database interface to be used to connect to the PostgresSQL database.
 
 say "Please enter the DB name to which you are trying to connect:";
@@ -42,5 +43,6 @@ my $SQL = "CREATE TABLE population (
                   ID SERIAL PRIMARY KEY,
                   NAME VARCHAR(100),
           )";
+my $sth = '';
 $sth = $connection->do($SQL);
 $connection->commit or die $DBI::errstr;

@@ -33,4 +33,6 @@ for (my $vm_number = 1; $vm_number <= $user_vm_count; $vm_number++) {
     }
 
     say "$vm_number";
+
+
 }
