@@ -33,14 +33,9 @@ my $connection = DBI->connect("dbi:Pg:dbname=$dbname; host=$host; port=$port",
         AutoCommit => 0, RaiseError => 1
     }) || die $DBI::errstr;
 
-#DROP TABLE if the table already exists.
 say "Please enter the table name:";
 my $table_name = <STDIN>;
 chomp $table_name;
-
-my $sql = "DROP TABLE IF EXISTS $table_name";
-my $sth = $connection->do($sql);
-$connection->commit or die $DBI::errstr;
 
 # Create a table
 my $SQL = "CREATE TABLE population (
