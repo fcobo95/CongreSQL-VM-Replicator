@@ -17,6 +17,9 @@ for (my $i = 0; $i < 20; $i++) {
     say "$i</br>";
 }
 
+my($disk, $available, $dir);
+$disk = system("df -h | grep GB");
+
 # This will allow me to print all the events happening in the pc.
 #$counter = 0;
 #while(){
